@@ -1,0 +1,60 @@
+[
+   {
+    "title":"Quran APP",
+    "liveDemo":"https://mazenadel1.github.io/quran/",
+    "codeLink":"https://github.com/MazenAdel1/quran/",
+    "video": true,
+    "posterSrc": "../src/imgs/thumbnails/quran-app.png",
+    "techs":["React", "Redux Toolkit", "TailwindCSS"]
+   },
+   {
+    "title":"Multi-Step Form",
+    "liveDemo":"https://mazenadel1.github.io/multi-step-from/",
+    "codeLink":"https://github.com/MazenAdel1/multi-step-from/",
+    "video":false,
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+   },
+   {
+    "title":"Country Searcher",
+    "liveDemo":"https://mazenadel1.github.io/Country-Searcher/index.html",
+    "codeLink":"https://github.com/MazenAdel1/Country-Searcher/",
+    "video":false,
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+   },
+   {
+    "title":"E-Commerce Product",
+    "liveDemo":"https://mazenadel1.github.io/E-commerce-product/",
+    "codeLink":"https://github.com/MazenAdel1/E-commerce-product/",
+    "video":false,
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+   },
+   {
+    "title":"Full Template",
+    "liveDemo":"https://mazenadel1.github.io/Elzero-Template-Three/",
+    "codeLink":"https://github.com/MazenAdel1/Elzero-Template-Three/",
+    "video":false,
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+   },
+   {
+    "title":"Recipe APP",
+    "liveDemo":"https://mazenadel1.github.io/recipe-app/",
+    "codeLink":"https://github.com/MazenAdel1/recipe-app/",
+    "video":true,
+    "posterSrc": "../src/imgs/thumbnails/recipe-app.png",
+    "techs":["React", "Redux Toolkit", "TailwindCSS"]
+   },
+   {
+    "title":"Hadith Generator",
+    "liveDemo":"https://mazenadel1.github.io/Hadith-Generator/",
+    "codeLink":"https://github.com/MazenAdel1/Hadith-Generator",
+    "video":false,
+    "techs":["HTML", "Vanilla JavaScript", "Pure CSS"]
+   },
+   {
+    "title":"IP Address Tracker",
+    "liveDemo":"https://mazenadel1.github.io/ip-address-tracker/",
+    "codeLink":"https://github.com/MazenAdel1/ip-address-tracker/",
+    "video":false,
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+   }
+]
