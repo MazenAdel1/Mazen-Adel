@@ -8,9 +8,7 @@ export type CardProps = {
   liveDemo: string;
   codeLink: string;
   assetSrc: string;
-  blurySrc?: string;
-  video: boolean;
-  posterSrc?: string;
+  blurySrc: string;
   techs: string[];
 };
 
@@ -20,29 +18,18 @@ export default function ProjectCard({
   codeLink,
   assetSrc,
   blurySrc,
-  video,
-  posterSrc,
   techs,
 }: CardProps) {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    cardRef.current?.addEventListener(`mouseenter`, () => {
-      videoRef.current?.play();
-    });
-    cardRef.current?.addEventListener(`mouseleave`, () => {
-      videoRef.current?.pause();
-    });
-    if (!video) {
-      const img = new Image();
-      img.onload = () => {
-        setImageLoaded(true);
-      };
-      img.src = assetSrc;
-    }
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+    img.src = assetSrc;
   }, []);
 
   return (
@@ -52,39 +39,27 @@ export default function ProjectCard({
         ref={cardRef}
       >
         <div className="relative flex-1">
-          {!video ? (
-            <>
-              <img
-                src={assetSrc}
-                alt="full template"
-                className={`${
-                  imageLoaded ? "block" : "hidden"
-                } h-full w-full transition-all`}
-              />
-              <div
-                className={`${
-                  !imageLoaded ? "block" : "hidden"
-                } h-full w-full transition-all`}
-              >
-                <Blurhash
-                  hash={`${blurySrc}`}
-                  width={500}
-                  resolutionX={32}
-                  resolutionY={32}
-                  punch={1}
-                  className="w-full"
-                />
-              </div>
-            </>
-          ) : (
-            <video
-              loop
-              src={assetSrc}
-              className="h-full object-fill"
-              ref={videoRef}
-              poster={posterSrc}
-            ></video>
-          )}
+          <img
+            src={assetSrc}
+            alt="full template"
+            className={`${
+              imageLoaded ? "block" : "hidden"
+            } h-full w-full transition-all`}
+          />
+          <div
+            className={`${
+              !imageLoaded ? "block" : "hidden"
+            } h-full w-full transition-all`}
+          >
+            <Blurhash
+              hash={`${blurySrc}`}
+              width={500}
+              resolutionX={32}
+              resolutionY={32}
+              punch={1}
+              className="w-full"
+            />
+          </div>
 
           <div
             className={`absolute bottom-full flex h-full w-full items-center justify-center gap-1 bg-[#0000003f] backdrop-blur-sm transition-all delay-500 group-hover:bottom-0`}

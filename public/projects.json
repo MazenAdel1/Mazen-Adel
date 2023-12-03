@@ -3,14 +3,13 @@
     "title":"Quran APP",
     "liveDemo":"https://mazenadel1.github.io/quran/",
     "codeLink":"https://github.com/MazenAdel1/quran/",
-    "video": true,
-    "techs":["React", "Redux Toolkit", "TailwindCSS"]
+    "techs":["React", "Redux Toolkit", "TailwindCSS"],
+    "blurySrc": "L69G%O0$Qk9^~VNHRQR*00^NKQ-T"
    },
    {
     "title":"Multi-Step Form",
     "liveDemo":"https://mazenadel1.github.io/multi-step-form/",
     "codeLink":"https://github.com/MazenAdel1/multi-step-form/",
-    "video":false,
     "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
     "blurySrc": "LDQ9]40604IYT2ESXAkDoC~M-#ob"
    },
@@ -18,7 +17,6 @@
     "title":"Country Searcher",
     "liveDemo":"https://mazenadel1.github.io/Country-Searcher/index.html",
     "codeLink":"https://github.com/MazenAdel1/Country-Searcher/",
-    "video":false,
     "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
     "blurySrc": "L8Cs2G{i00yCt#JBX+V?00v~?aX9"
    },
@@ -26,7 +24,6 @@
     "title":"E-Commerce Product",
     "liveDemo":"https://mazenadel1.github.io/E-commerce-product/",
     "codeLink":"https://github.com/MazenAdel1/E-commerce-product/",
-    "video":false,
     "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
     "blurySrc": "LTR.+7D4jF%ho~jGW=WU.TyEayV?"
    },
@@ -34,7 +31,6 @@
     "title":"Full Template",
     "liveDemo":"https://mazenadel1.github.io/Elzero-Template-Three/",
     "codeLink":"https://github.com/MazenAdel1/Elzero-Template-Three/",
-    "video":false,
     "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
     "blurySrc": "LBQmCsxH_MI=?wxYDiNK00Rn%gt5"
    },
@@ -42,14 +38,13 @@
     "title":"Recipe APP",
     "liveDemo":"https://mazenadel1.github.io/recipe-app/",
     "codeLink":"https://github.com/MazenAdel1/recipe-app/",
-    "video":true,
-    "techs":["React", "Redux Toolkit", "TailwindCSS"]
+    "techs":["React", "Redux Toolkit", "TailwindCSS"],
+    "blurySrc": "L6E.Ru?F0N~C?v.SjFxA0MtT-pE2"
    },
    {
     "title":"Hadith Generator",
     "liveDemo":"https://mazenadel1.github.io/Hadith-Generator/",
     "codeLink":"https://github.com/MazenAdel1/Hadith-Generator",
-    "video":false,
     "techs":["HTML", "Vanilla JavaScript", "Pure CSS"],
     "blurySrc": "LLCPLaxtRQax~TozaejrOFWYoJj="
    },

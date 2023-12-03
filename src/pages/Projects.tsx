@@ -3,8 +3,6 @@ import { useDispatch } from "react-redux";
 import { useEffect, useMemo, useState } from "react";
 import { hideLink, showAllLinks } from "../RTK/slices/menuSlice";
 
-import quranAppVideo from "../videos/quran-app-video.mp4";
-import recipeAppVideo from "../videos/recipe-app-video.mp4";
 import fullTemplateImg from "../imgs/thumbnails/full-template.png";
 import eCommerceProductImg from "../imgs/thumbnails/e-commerce-product.png";
 import multiStepFormImg from "../imgs/thumbnails/multi-step-form.png";
@@ -69,14 +67,14 @@ export default function Projects() {
   };
 
   const ASSETS = [
-    { mainSrc: quranAppVideo, poster: quranAppImg },
-    { mainSrc: multiStepFormImg },
-    { mainSrc: countrySearcherImg },
-    { mainSrc: eCommerceProductImg },
-    { mainSrc: fullTemplateImg },
-    { mainSrc: recipeAppVideo, poster: recipeAppImg },
-    { mainSrc: hadithGeneratorImg },
-    { mainSrc: ipAddressTrackerImg },
+    quranAppImg,
+    multiStepFormImg,
+    countrySearcherImg,
+    eCommerceProductImg,
+    fullTemplateImg,
+    recipeAppImg,
+    hadithGeneratorImg,
+    ipAddressTrackerImg,
   ];
 
   return (
@@ -128,10 +126,8 @@ export default function Projects() {
                     title={project.title}
                     liveDemo={project.liveDemo}
                     codeLink={project.codeLink}
-                    assetSrc={ASSETS[index].mainSrc}
+                    assetSrc={ASSETS[index]}
                     blurySrc={project.blurySrc}
-                    video={project.video}
-                    posterSrc={ASSETS[index].poster}
                     techs={project.techs}
                   />
                 ) : null,

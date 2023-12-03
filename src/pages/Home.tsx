@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import avatar from "../imgs/avatar.png";
 
 export default function Home() {
   return (
     <>
       <div className="relative flex h-full min-h-[100dvh] flex-col justify-center gap-20">
-        <div className="flex flex-col items-center justify-center">
+        <div className="z-10 flex flex-col items-center justify-center">
           <h1 className="text-center text-[70px] font-bold leading-[60px] text-white md:text-[120px]">
             Mazen Adel
           </h1>
@@ -12,7 +13,7 @@ export default function Home() {
             Front-End Developer
           </h2>
         </div>
-        <div className="-mb-10 flex justify-center gap-10 text-white">
+        <div className="z-10 -mb-10 flex justify-center gap-10 text-white">
           <Link
             to={"/Mazen-Adel/about"}
             id="about"
@@ -35,6 +36,11 @@ export default function Home() {
             Contact
           </Link>
         </div>
+        <img
+          src={avatar}
+          alt="Avatar"
+          className="absolute bottom-0 left-1/2 z-0 w-52 -translate-x-1/2"
+        />
       </div>
     </>
   );
