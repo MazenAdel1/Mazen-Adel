@@ -145,7 +145,7 @@ export default function About() {
           Resume
         </a>
         <Link
-          to={"/contact"}
+          to={"/Mazen-Adel/contact"}
           className="relative z-10 block w-full rounded-md bg-gradient-to-tr from-blue-400 to-blue-600 px-2 py-1 font-medium drop-shadow-md transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:-z-10 after:rounded-md after:bg-gradient-to-tr after:from-blue-400 after:to-blue-600 after:opacity-0 after:transition-[opacity] after:duration-300 after:content-[''] hover:after:from-blue-600 hover:after:to-blue-400 hover:after:opacity-100"
         >
           Let’s build something amazing together!
