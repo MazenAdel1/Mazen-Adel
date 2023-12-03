@@ -4,13 +4,13 @@
     "liveDemo":"https://mazenadel1.github.io/quran/",
     "codeLink":"https://github.com/MazenAdel1/quran/",
     "video": true,
-    "posterSrc": "src/imgs/thumbnails/quran-app.png",
+    "posterSrc": "/Mazen-Adel/src/imgs/thumbnails/quran-app.png",
     "techs":["React", "Redux Toolkit", "TailwindCSS"]
    },
    {
     "title":"Multi-Step Form",
-    "liveDemo":"https://mazenadel1.github.io/multi-step-from/",
-    "codeLink":"https://github.com/MazenAdel1/multi-step-from/",
+    "liveDemo":"https://mazenadel1.github.io/multi-step-form/",
+    "codeLink":"https://github.com/MazenAdel1/multi-step-form/",
     "video":false,
     "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
    },
@@ -40,7 +40,7 @@
     "liveDemo":"https://mazenadel1.github.io/recipe-app/",
     "codeLink":"https://github.com/MazenAdel1/recipe-app/",
     "video":true,
-    "posterSrc": "src/imgs/thumbnails/recipe-app.png",
+    "posterSrc": "/Mazen-Adel/src/imgs/thumbnails/recipe-app.png",
     "techs":["React", "Redux Toolkit", "TailwindCSS"]
    },
    {
