@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import avatar from "../imgs/avatar.png";
+import SectionEnter from "../components/SectionEnter";
 
 export default function Home() {
   return (
     <>
+      <SectionEnter />
+
       <div className="relative flex h-full min-h-[100dvh] flex-col justify-center gap-20">
         <div className="z-10 flex flex-col items-center justify-center">
           <h1 className="text-center text-[70px] font-bold leading-[60px] text-white md:text-[120px]">
@@ -39,7 +42,7 @@ export default function Home() {
         <img
           src={avatar}
           alt="Avatar"
-          className="absolute bottom-0 left-1/2 z-0 w-52 -translate-x-1/2"
+          className="absolute bottom-0 left-1/2 z-0 w-32 -translate-x-1/2"
         />
       </div>
     </>

@@ -34,8 +34,6 @@ export default function Projects() {
     [categories],
   );
 
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8];
-
   const [projectsData, setProjectsData] = useState([]);
 
   const dispatch = useDispatch();
@@ -132,12 +130,14 @@ export default function Projects() {
                   />
                 ) : null,
               )
-            : arr.map((_, index) => (
-                <div
-                  className={`flex h-40 w-full bg-[#00000052] backdrop-blur`}
-                  key={index}
-                ></div>
-              ))}
+            : Array(8)
+                .fill(0)
+                .map((_, index) => (
+                  <div
+                    className={`flex h-40 w-full bg-[#00000052] backdrop-blur`}
+                    key={index}
+                  ></div>
+                ))}
         </Masonry>
       </ResponsiveMasonry>
     </>

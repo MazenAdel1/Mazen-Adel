@@ -46,8 +46,8 @@ export default function About() {
 
       <Header title="About" />
 
-      <div className="container relative mx-auto flex flex-col gap-9 text-center text-white">
-        <p className="mx-auto w-full rounded-sm bg-[#00000028] px-1 py-2 tracking-wide backdrop-blur-sm md:w-2/3">
+      <div className="relative mb-9 w-full bg-[#00000028] text-center text-white backdrop-blur">
+        <p className="mx-auto w-full rounded-sm  px-1 py-2 tracking-wide md:w-1/2">
           Welcome to my corner of the digital world! I’m{" "}
           <span className="block bg-gradient-to-br from-white to-[#6cc7ff] bg-clip-text pr-0.5 text-lg font-bold italic text-transparent first-letter:text-3xl">
             Mazen <span className="text-3xl">A</span>del
@@ -61,6 +61,8 @@ export default function About() {
           contribute my unique perspective and skills to the ever-changing web
           development landscape.
         </p>
+      </div>
+      <div className="container relative mx-auto flex flex-col gap-9 text-center text-white">
         <div className="flex flex-col gap-3">
           <h2 className="text-3xl">Skills</h2>
           <div className="grid grid-cols-3 grid-rows-1 place-items-center gap-2 sm:grid-cols-5 lg:px-40">
