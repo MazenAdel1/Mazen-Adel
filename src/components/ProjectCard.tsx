@@ -49,7 +49,7 @@ export default function ProjectCard({
           <div
             className={`${
               !imageLoaded ? "block" : "hidden"
-            } h-full w-full transition-all`}
+            } h-full w-full animate-pulse transition-all`}
           >
             <Blurhash
               hash={`${blurySrc}`}

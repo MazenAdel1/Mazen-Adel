@@ -9,6 +9,7 @@ export default {
       animation: {
         navigate: "navigate 1s ease-in-out",
         timeout: "timeout 4s ease",
+        pulse: "pulse 4s ease-in-out infinite",
       },
     },
     keyframes: {
@@ -19,6 +20,11 @@ export default {
       timeout: {
         from: { width: "100%" },
         to: { width: "0%" },
+      },
+      pulse: {
+        "0%": { opacity: 1 },
+        "50%": { opacity: 0.7 },
+        "100%": { opacity: 1 },
       },
     },
   },
