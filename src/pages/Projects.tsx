@@ -11,6 +11,8 @@ import multiStepFormImg from "../imgs/thumbnails/multi-step-form.png";
 import ipAddressTrackerImg from "../imgs/thumbnails/ip-address-tracker.png";
 import hadithGeneratorImg from "../imgs/thumbnails/hadith-generator.png";
 import countrySearcherImg from "../imgs/thumbnails/country-searcher.png";
+import quranAppImg from "../imgs/thumbnails/quran-app.png";
+import recipeAppImg from "../imgs/thumbnails/recipe-app.png";
 
 import reactIcon from "../imgs/icons/react.svg";
 import jsIcon from "../imgs/icons/js.svg";
@@ -67,14 +69,14 @@ export default function Projects() {
   };
 
   const ASSETS = [
-    quranAppVideo,
-    multiStepFormImg,
-    countrySearcherImg,
-    eCommerceProductImg,
-    fullTemplateImg,
-    recipeAppVideo,
-    hadithGeneratorImg,
-    ipAddressTrackerImg,
+    { mainSrc: quranAppVideo, poster: quranAppImg },
+    { mainSrc: multiStepFormImg },
+    { mainSrc: countrySearcherImg },
+    { mainSrc: eCommerceProductImg },
+    { mainSrc: fullTemplateImg },
+    { mainSrc: recipeAppVideo, poster: recipeAppImg },
+    { mainSrc: hadithGeneratorImg },
+    { mainSrc: ipAddressTrackerImg },
   ];
 
   return (
@@ -126,9 +128,10 @@ export default function Projects() {
                     title={project.title}
                     liveDemo={project.liveDemo}
                     codeLink={project.codeLink}
-                    assetSrc={ASSETS[index]}
+                    assetSrc={ASSETS[index].mainSrc}
+                    blurySrc={project.blurySrc}
                     video={project.video}
-                    posterSrc={project.posterSrc}
+                    posterSrc={ASSETS[index].poster}
                     techs={project.techs}
                   />
                 ) : null,

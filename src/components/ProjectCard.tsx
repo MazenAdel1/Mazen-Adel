@@ -1,12 +1,14 @@
 import worldIcon from "../imgs/icons/world.gif";
 import githubIcon from "../imgs/icons/github.svg";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Blurhash } from "react-blurhash";
 
 export type CardProps = {
   title: string;
   liveDemo: string;
   codeLink: string;
   assetSrc: string;
+  blurySrc?: string;
   video: boolean;
   posterSrc?: string;
   techs: string[];
@@ -17,12 +19,15 @@ export default function ProjectCard({
   liveDemo,
   codeLink,
   assetSrc,
+  blurySrc,
   video,
   posterSrc,
   techs,
 }: CardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     cardRef.current?.addEventListener(`mouseenter`, () => {
@@ -31,21 +36,46 @@ export default function ProjectCard({
     cardRef.current?.addEventListener(`mouseleave`, () => {
       videoRef.current?.pause();
     });
+    if (!video) {
+      const img = new Image();
+      img.onload = () => {
+        setImageLoaded(true);
+      };
+      img.src = assetSrc;
+    }
   }, []);
 
   return (
     <>
       <div
-        className={`group flex w-full flex-col gap-2 overflow-hidden bg-[#00000028] pb-2 backdrop-blur`}
+        className={`group flex min-h-[200px] w-full flex-col gap-2 overflow-hidden bg-[#00000028] pb-2 backdrop-blur`}
         ref={cardRef}
       >
         <div className="relative flex-1">
           {!video ? (
-            <img
-              src={assetSrc}
-              alt="full template"
-              className="block h-full w-full"
-            />
+            <>
+              <img
+                src={assetSrc}
+                alt="full template"
+                className={`${
+                  imageLoaded ? "block" : "hidden"
+                } h-full w-full transition-all`}
+              />
+              <div
+                className={`${
+                  !imageLoaded ? "block" : "hidden"
+                } h-full w-full transition-all`}
+              >
+                <Blurhash
+                  hash={`${blurySrc}`}
+                  width={500}
+                  resolutionX={32}
+                  resolutionY={32}
+                  punch={1}
+                  className="w-full"
+                />
+              </div>
+            </>
           ) : (
             <video
               loop
@@ -78,7 +108,7 @@ export default function ProjectCard({
             <a
               href={liveDemo}
               target="_blank"
-              className="flex items-center justify-center gap-1 bg-[#ffffff48] px-1 py-0.5 text-white backdrop-blur"
+              className="flex items-center justify-center gap-1 bg-[#ffffff48] px-1 py-0.5 text-[15px] text-white backdrop-blur"
             >
               Live Demo
               <img src={worldIcon} className="block h-5 w-5 rounded-full" />
@@ -86,7 +116,7 @@ export default function ProjectCard({
             <a
               href={codeLink}
               target="_blank"
-              className="flex items-center justify-center gap-1 bg-[#ffffff48] px-1 py-0.5 text-white backdrop-blur"
+              className="flex items-center justify-center gap-1 bg-[#ffffff48] px-1 py-0.5 text-[15px] text-white backdrop-blur"
             >
               Code <img src={githubIcon} alt="github" className="block w-5" />
             </a>

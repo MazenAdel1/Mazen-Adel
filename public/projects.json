@@ -4,7 +4,6 @@
     "liveDemo":"https://mazenadel1.github.io/quran/",
     "codeLink":"https://github.com/MazenAdel1/quran/",
     "video": true,
-    "posterSrc": "../imgs/thumbnails/quran-app.png",
     "techs":["React", "Redux Toolkit", "TailwindCSS"]
    },
    {
@@ -12,35 +11,38 @@
     "liveDemo":"https://mazenadel1.github.io/multi-step-form/",
     "codeLink":"https://github.com/MazenAdel1/multi-step-form/",
     "video":false,
-    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
+    "blurySrc": "LDQ9]40604IYT2ESXAkDoC~M-#ob"
    },
    {
     "title":"Country Searcher",
     "liveDemo":"https://mazenadel1.github.io/Country-Searcher/index.html",
     "codeLink":"https://github.com/MazenAdel1/Country-Searcher/",
     "video":false,
-    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
+    "blurySrc": "L8Cs2G{i00yCt#JBX+V?00v~?aX9"
    },
    {
     "title":"E-Commerce Product",
     "liveDemo":"https://mazenadel1.github.io/E-commerce-product/",
     "codeLink":"https://github.com/MazenAdel1/E-commerce-product/",
     "video":false,
-    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
+    "blurySrc": "LTR.+7D4jF%ho~jGW=WU.TyEayV?"
    },
    {
     "title":"Full Template",
     "liveDemo":"https://mazenadel1.github.io/Elzero-Template-Three/",
     "codeLink":"https://github.com/MazenAdel1/Elzero-Template-Three/",
     "video":false,
-    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
+    "blurySrc": "LBQmCsxH_MI=?wxYDiNK00Rn%gt5"
    },
    {
     "title":"Recipe APP",
     "liveDemo":"https://mazenadel1.github.io/recipe-app/",
     "codeLink":"https://github.com/MazenAdel1/recipe-app/",
     "video":true,
-    "posterSrc": "../imgs/thumbnails/recipe-app.png",
     "techs":["React", "Redux Toolkit", "TailwindCSS"]
    },
    {
@@ -48,13 +50,15 @@
     "liveDemo":"https://mazenadel1.github.io/Hadith-Generator/",
     "codeLink":"https://github.com/MazenAdel1/Hadith-Generator",
     "video":false,
-    "techs":["HTML", "Vanilla JavaScript", "Pure CSS"]
+    "techs":["HTML", "Vanilla JavaScript", "Pure CSS"],
+    "blurySrc": "LLCPLaxtRQax~TozaejrOFWYoJj="
    },
    {
     "title":"IP Address Tracker",
     "liveDemo":"https://mazenadel1.github.io/ip-address-tracker/",
     "codeLink":"https://github.com/MazenAdel1/ip-address-tracker/",
     "video":false,
-    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"]
+    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
+    "blurySrc": "L5ON8?8w00FU0Ixj02MJ00n09In#"
    }
 ]
