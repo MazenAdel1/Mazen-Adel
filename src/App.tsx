@@ -8,12 +8,12 @@ import Menu from "./components/Menu";
 
 function App() {
   return (
-    <main className="font-ubuntu relative flex min-h-[100dvh] flex-col overflow-hidden bg-[#001F3D]">
+    <main className="relative flex min-h-[100dvh] flex-col overflow-hidden bg-[#001F3D] font-ubuntu">
       <Background />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Mazen-Adel/" element={<Home />} />
         <Route
-          path="/about"
+          path="/Mazen-Adel/about"
           element={
             <>
               <About />
@@ -22,7 +22,7 @@ function App() {
           }
         />
         <Route
-          path="/projects"
+          path="/Mazen-Adel/projects"
           element={
             <>
               <Projects />
@@ -31,7 +31,7 @@ function App() {
           }
         />
         <Route
-          path="/contact"
+          path="/Mazen-Adel/contact"
           element={
             <>
               <Contact />

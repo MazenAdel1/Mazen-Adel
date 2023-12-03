@@ -32,7 +32,7 @@ export default function Menu() {
     >
       <div className="flex h-full flex-col justify-center gap-10 pl-20 text-[50px] sm:text-[80px]">
         <Link
-          to={"/"}
+          to={"/Mazen-Adel/"}
           className="relative block w-fit font-bold text-white after:absolute after:right-0 after:top-full after:block after:h-1 after:w-0 after:bg-white after:transition-all after:content-[''] hover:after:w-1/3 focus-visible:after:w-4"
           onClick={linkClick}
         >
@@ -40,7 +40,7 @@ export default function Menu() {
         </Link>
         {menu.about && (
           <Link
-            to={"/about"}
+            to={"/Mazen-Adel/about"}
             className="relative block w-fit font-bold text-white after:absolute after:right-0 after:top-full after:block after:h-1 after:w-0 after:bg-white after:transition-all after:content-[''] hover:after:w-1/3 focus-visible:after:w-4"
             id="about"
             onClick={linkClick}
@@ -50,7 +50,7 @@ export default function Menu() {
         )}
         {menu.projects && (
           <Link
-            to={"/projects"}
+            to={"/Mazen-Adel/projects"}
             className="relative block w-fit font-bold text-white after:absolute after:right-0 after:top-full after:block after:h-1 after:w-0 after:bg-white after:transition-all after:content-[''] hover:after:w-1/3 focus-visible:after:w-4"
             id="projects"
             onClick={linkClick}
@@ -60,7 +60,7 @@ export default function Menu() {
         )}
         {menu.contact && (
           <Link
-            to={"/contact"}
+            to={"/Mazen-Adel/contact"}
             className="relative block w-fit font-bold text-white after:absolute after:right-0 after:top-full after:block after:h-1 after:w-0 after:bg-white after:transition-all after:content-[''] hover:after:w-1/3 focus-visible:after:w-4"
             id="contact"
             onClick={linkClick}

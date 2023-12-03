@@ -21,6 +21,8 @@ import SectionEnter from "../components/SectionEnter";
 
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
+import * as projects from "../../public/projects.json";
+
 export default function Projects() {
   const [categories, setCategories] = useState([
     { title: "All", active: true },
@@ -44,9 +46,7 @@ export default function Projects() {
     dispatch(showAllLinks());
     dispatch(hideLink({ projects: false }));
 
-    fetch("../../public/projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjectsData(data));
+    setProjectsData(projects.default);
   }, []);
 
   const filteringCategory = (

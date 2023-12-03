@@ -14,21 +14,21 @@ export default function Home() {
         </div>
         <div className="-mb-10 flex justify-center gap-10 text-white">
           <Link
-            to={"/about"}
+            to={"/Mazen-Adel/about"}
             id="about"
             className="relative text-xl after:absolute after:right-0 after:top-full after:block after:h-0.5 after:w-0 after:bg-white after:transition-all after:content-[''] hover:after:w-4 focus-visible:after:w-4"
           >
             About
           </Link>
           <Link
-            to={"/projects"}
+            to={"/Mazen-Adel/projects"}
             id="projects"
             className="relative text-xl after:absolute after:right-0 after:top-full after:block after:h-0.5 after:w-0 after:bg-white after:transition-all after:content-[''] hover:after:w-4 focus-visible:after:w-4"
           >
             Projects
           </Link>
           <Link
-            to={"/contact"}
+            to={"/Mazen-Adel/contact"}
             id="contact"
             className="relative text-xl after:absolute after:right-0 after:top-full after:block after:h-0.5 after:w-0 after:bg-white after:transition-all after:content-[''] hover:after:w-4 focus-visible:after:w-4"
           >
