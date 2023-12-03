@@ -87,7 +87,7 @@ export default function Projects() {
         <span className="relative text-xl font-medium tracking-widest text-white after:absolute after:right-0 after:top-full after:h-0.5 after:w-1/3 after:bg-white after:content-['']">
           Filter
         </span>
-        <div className="flex w-full justify-center gap-3">
+        <div className="flex w-full flex-wrap justify-center gap-3">
           {categories.map((category) => (
             <button
               key={category.title}
@@ -133,9 +133,10 @@ export default function Projects() {
                   />
                 ) : null,
               )
-            : arr.map(() => (
+            : arr.map((_, index) => (
                 <div
                   className={`flex h-40 w-full bg-[#00000052] backdrop-blur`}
+                  key={index}
                 ></div>
               ))}
         </Masonry>

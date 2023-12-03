@@ -54,7 +54,7 @@ export default function About() {
           </span>
           , a self-taught high school student with an interest in front-end
           development.
-          <pre className="py-2" />
+          <br className="my-2 block" />
           Through this section, I invite you to explore my projects, each of
           which represents a step in my ongoing learning process. I believe that
           age is no barrier to innovation in the tech world, and I’m excited to

@@ -138,18 +138,18 @@ export default function Contact() {
         </button>
 
         <span
-          className="after:animate-timeout relative bottom-[540px] hidden rounded-md bg-gradient-to-br from-green-600 to-green-400 px-2 py-3 text-lg text-white after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:rounded-b-lg after:bg-[#00000060]"
+          className="relative bottom-[540px] hidden rounded-md bg-gradient-to-br from-green-600 to-green-400 px-2 py-3 text-lg text-white after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:animate-timeout after:rounded-b-lg after:bg-[#00000060]"
           ref={successRef}
         >
           Message Is Successfully Sent!
         </span>
 
-        <span className="absolute -bottom-7 z-0 text-center text-4xl font-semibold leading-[60px] tracking-[25px] text-white sm:bottom-auto sm:left-[106%] sm:top-auto sm:h-full sm:text-xl sm:[writing-mode:vertical-lr]">
+        <span className="absolute -bottom-[22px] z-0 text-center text-4xl font-semibold leading-[60px] tracking-[25px] text-white sm:bottom-auto sm:left-[106%] sm:top-auto sm:h-full sm:text-xl sm:[writing-mode:vertical-lr]">
           GET IN TOUCH
         </span>
       </form>
 
-      <div className="absolute bottom-3 right-3 flex w-full justify-center gap-3 ">
+      <div className="absolute bottom-3 flex w-full justify-center gap-3">
         <a
           href="https://www.facebook.com/mazen.adelii"
           target="_blank"

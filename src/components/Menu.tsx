@@ -71,7 +71,7 @@ export default function Menu() {
       </div>
       <button
         onClick={() => dispatch(toggleStatus(false))}
-        className="absolute right-14 top-6 text-[50px]"
+        className="absolute right-14 top-6 text-[50px] text-white sm:text-black"
       >
         X
       </button>

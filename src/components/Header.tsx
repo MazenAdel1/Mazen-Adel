@@ -13,9 +13,9 @@ export default function Header({ title }: { title: string }) {
         className="flex flex-col justify-center gap-2"
         onClick={() => dispatch(toggleStatus(true))}
       >
-        <span className="block h-1 w-10 bg-black"></span>
-        <span className="block h-1 w-10 bg-black"></span>
-        <span className="block h-1 w-10 bg-black"></span>
+        <span className="block h-1 w-10 bg-white sm:bg-black"></span>
+        <span className="block h-1 w-10 bg-white sm:bg-black"></span>
+        <span className="block h-1 w-10 bg-white sm:bg-black"></span>
       </button>
     </header>
   );
