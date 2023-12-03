@@ -95,7 +95,7 @@ export default function About() {
         </div>
       </div>
       <div className="relative my-16 flex flex-col gap-3 bg-[#ffffff41] py-2 text-white backdrop-blur before:absolute before:right-3 before:top-1/2  before:hidden before:h-max before:-translate-y-1/2 before:text-center before:text-lg before:font-medium before:tracking-widest before:content-['Social_Media'] before:[writing-mode:vertical-rl] sm:before:block">
-        <div className="flex h-full items-center justify-center gap-4">
+        <div className="flex h-full flex-wrap items-center justify-center gap-2 sm:gap-4">
           <a
             href="https://www.facebook.com/mazen.adelii"
             target="_blank"
