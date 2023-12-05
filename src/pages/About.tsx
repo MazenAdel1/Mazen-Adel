@@ -140,7 +140,7 @@ export default function About() {
       </div>
       <div className="relative mx-auto flex flex-col items-center justify-center gap-3 pb-4 text-center text-white">
         <a
-          href="https://drive.google.com/file/d/1yEp3ZmzcJLec9AOQMAUC_9ljos4gBAYj/view?usp=sharing"
+          href="https://drive.google.com/file/d/1bNHmAKVCJGFnmWHdrM3m82vBwmAYNCIi/view?usp=sharing"
           target="_blank"
           className="relative z-10 block w-full rounded-md bg-gradient-to-tr from-blue-400 to-blue-600 px-2 py-1 font-medium drop-shadow-md transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:-z-10 after:rounded-md after:bg-gradient-to-tr after:from-blue-400 after:to-blue-600 after:opacity-0 after:transition-[opacity] after:duration-300 after:content-[''] hover:after:from-blue-600 hover:after:to-blue-400 hover:after:opacity-100"
         >
