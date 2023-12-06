@@ -62,7 +62,7 @@ export default function ProjectCard({
           </div>
 
           <div
-            className={`absolute bottom-full flex h-full w-full items-center justify-center gap-1 bg-[#0000003f] backdrop-blur-sm transition-all delay-500 group-hover:bottom-0`}
+            className={`absolute bottom-full flex h-full w-full items-center justify-center gap-1 bg-[#0000003f] backdrop-blur-sm transition-all delay-[250ms] group-hover:bottom-0`}
           >
             <div className="flex flex-wrap justify-center gap-1">
               {techs.map((tech) => (
