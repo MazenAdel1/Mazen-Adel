@@ -16,6 +16,9 @@ import githubIcon from "../imgs/icons/github.svg";
 import facebookIcon from "../imgs/icons/facebook.svg";
 import linkedinIcon from "../imgs/icons/linkedin.svg";
 
+import resume1 from "../imgs/resume-1.png";
+import resume2 from "../imgs/resume-2.png";
+
 import { Link } from "react-router-dom";
 import SectionEnter from "../components/SectionEnter";
 
@@ -46,7 +49,7 @@ export default function About() {
 
       <Header title="About" />
 
-      <div className="relative mb-9 w-full bg-[#00000028] text-center text-white backdrop-blur">
+      <div className="relative mb-16 w-full bg-[#00000028] text-center text-white backdrop-blur">
         <p className="mx-auto w-full rounded-sm  px-1 py-2 tracking-wide md:w-1/2">
           Welcome to my corner of the digital world! I’m{" "}
           <span className="block bg-gradient-to-br from-white to-[#6cc7ff] bg-clip-text pr-0.5 text-lg font-bold italic text-transparent first-letter:text-3xl">
@@ -55,11 +58,9 @@ export default function About() {
           , a self-taught high school student with an interest in front-end
           development.
           <br className="my-2 block" />
-          Through this section, I invite you to explore my projects, each of
-          which represents a step in my ongoing learning process. I believe that
-          age is no barrier to innovation in the tech world, and I’m excited to
-          contribute my unique perspective and skills to the ever-changing web
-          development landscape.
+          Through this section, I invite you to explore my projects. I’m excited
+          to contribute my unique perspective and skills to the ever-changing
+          web development landscape.
         </p>
       </div>
       <div className="container relative mx-auto flex flex-col gap-9 text-center text-white">
@@ -96,7 +97,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="relative my-16 flex flex-col gap-3 bg-[#ffffff41] py-2 text-white backdrop-blur before:absolute before:right-3 before:top-1/2  before:hidden before:h-max before:-translate-y-1/2 before:text-center before:text-lg before:font-medium before:tracking-widest before:content-['Social_Media'] before:[writing-mode:vertical-rl] sm:before:block">
+      <div className="relative my-24 flex flex-col gap-3 bg-[#ffffff41] py-2 text-white backdrop-blur before:absolute before:right-3 before:top-1/2  before:hidden before:h-max before:-translate-y-1/2 before:text-center before:text-lg before:font-medium before:tracking-widest before:content-['Social_Media'] before:[writing-mode:vertical-rl] sm:before:block">
         <div className="flex h-full flex-wrap items-center justify-center gap-2 sm:gap-4">
           <a
             href="https://www.facebook.com/mazen.adelii"
@@ -139,16 +140,27 @@ export default function About() {
         </div>
       </div>
       <div className="relative mx-auto flex flex-col items-center justify-center gap-3 pb-4 text-center text-white">
-        <a
-          href="https://drive.google.com/file/d/1bNHmAKVCJGFnmWHdrM3m82vBwmAYNCIi/view?usp=sharing"
-          target="_blank"
-          className="relative z-10 block w-full rounded-md bg-gradient-to-tr from-blue-400 to-blue-600 px-2 py-1 font-medium drop-shadow-md transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:-z-10 after:rounded-md after:bg-gradient-to-tr after:from-blue-400 after:to-blue-600 after:opacity-0 after:transition-[opacity] after:duration-300 after:content-[''] hover:after:from-blue-600 hover:after:to-blue-400 hover:after:opacity-100"
-        >
-          Resume
-        </a>
+        <div className="relative flex w-full flex-col gap-5">
+          <a
+            href="https://drive.google.com/file/d/1bNHmAKVCJGFnmWHdrM3m82vBwmAYNCIi/view?usp=sharing"
+            target="_blank"
+            className="absolute top-1/2 z-10 block w-full -translate-y-1/2 rounded-md bg-gradient-to-tr from-blue-400 to-blue-600 px-2 py-1 font-medium drop-shadow-xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:-z-10 after:rounded-md after:bg-gradient-to-tr after:from-blue-400 after:to-blue-600 after:opacity-0 after:transition-[opacity] after:duration-300 after:content-[''] hover:after:from-blue-600 hover:after:to-blue-400 hover:after:opacity-100"
+          >
+            Resume
+          </a>
+          <div className="group relative h-[300px]">
+            <div className=" absolute -right-5 h-full rotate-[15deg] drop-shadow-2xl transition-all duration-300 group-hover:right-0 group-hover:rotate-0">
+              <img src={resume2} alt="resume" className="h-full" />
+            </div>
+            <div className="absolute -left-10 h-full -rotate-[20deg] drop-shadow-2xl transition-all duration-300 group-hover:left-0 group-hover:rotate-0">
+              <img src={resume1} alt="resume" className="h-full" />
+            </div>
+          </div>
+        </div>
+
         <Link
           to={"/Mazen-Adel/contact"}
-          className="relative z-10 block w-full rounded-md bg-gradient-to-tr from-blue-400 to-blue-600 px-2 py-1 font-medium drop-shadow-md transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:-z-10 after:rounded-md after:bg-gradient-to-tr after:from-blue-400 after:to-blue-600 after:opacity-0 after:transition-[opacity] after:duration-300 after:content-[''] hover:after:from-blue-600 hover:after:to-blue-400 hover:after:opacity-100"
+          className="relative z-10 mt-16 block w-full rounded-md bg-gradient-to-tr from-blue-400 to-blue-600 px-2 py-1 font-medium drop-shadow-md transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:-z-10 after:rounded-md after:bg-gradient-to-tr after:from-blue-400 after:to-blue-600 after:opacity-0 after:transition-[opacity] after:duration-300 after:content-[''] hover:after:from-blue-600 hover:after:to-blue-400 hover:after:opacity-100 sm:mt-10"
         >
           Let’s build something amazing together!
         </Link>
