@@ -12,6 +12,7 @@ import countrySearcherImg from "../imgs/thumbnails/country-searcher.png";
 import quranAppImg from "../imgs/thumbnails/quran-app.png";
 import recipeAppImg from "../imgs/thumbnails/recipe-app.png";
 
+import nextjsIcon from "../imgs/icons/nextjs.svg";
 import reactIcon from "../imgs/icons/react.svg";
 import jsIcon from "../imgs/icons/js.svg";
 import tailwindIcon from "../imgs/icons/tailwindcss.svg";
@@ -24,6 +25,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 export default function Projects() {
   const [categories, setCategories] = useState([
     { title: "All", active: true },
+    { title: "Next.js", active: false, icon: nextjsIcon },
     { title: "React", active: false, icon: reactIcon },
     { title: "Vanilla JavaScript", active: false, icon: jsIcon },
     { title: "TailwindCSS", active: false, icon: tailwindIcon },
@@ -85,7 +87,7 @@ export default function Projects() {
         <span className="relative text-xl font-medium tracking-widest text-white after:absolute after:right-0 after:top-full after:h-0.5 after:w-1/3 after:bg-white after:content-['']">
           Filter
         </span>
-        <div className="flex w-full flex-wrap justify-center gap-3">
+        <div className="flex w-full flex-wrap justify-center gap-3 px-2">
           {categories.map((category) => (
             <button
               key={category.title}
