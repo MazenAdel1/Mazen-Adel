@@ -15,9 +15,9 @@
    },
    {
     "title":"Country Searcher",
-    "liveDemo":"https://mazenadel1.github.io/Country-Searcher/index.html",
-    "codeLink":"https://github.com/MazenAdel1/Country-Searcher/",
-    "techs":["HTML", "Vanilla JavaScript", "TailwindCSS"],
+    "liveDemo":"https://nextjs-country-searcher.vercel.app/",
+    "codeLink":"https://github.com/MazenAdel1/nextjs-country-searcher/",
+    "techs":["Next.js", "TypeScript", "TailwindCSS"],
     "blurySrc": "L8Cs2G{i00yCt#JBX+V?00v~?aX9"
    },
    {
