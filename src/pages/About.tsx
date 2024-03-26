@@ -3,18 +3,9 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { hideLink, showAllLinks } from "../RTK/slices/menuSlice";
 
-import htmlIcon from "../imgs/icons/html.svg";
-import cssIcon from "../imgs/icons/css.svg";
-import jsIcon from "../imgs/icons/js.svg";
-import tsIcon from "../imgs/icons/ts.svg";
-import gitIcon from "../imgs/icons/git.svg";
-import tailwindcssIcon from "../imgs/icons/tailwindcss.svg";
-import bootstrapIcon from "../imgs/icons/bootstrap.svg";
-import reactIcon from "../imgs/icons/react.svg";
-import reduxIcon from "../imgs/icons/redux.svg";
-import githubIcon from "../imgs/icons/github.svg";
 import facebookIcon from "../imgs/icons/facebook.svg";
 import linkedinIcon from "../imgs/icons/linkedin.svg";
+import githubIcon from "../imgs/icons/github.svg";
 
 import resume1 from "../imgs/resume-1.png";
 import resume2 from "../imgs/resume-2.png";
@@ -22,18 +13,7 @@ import resume2 from "../imgs/resume-2.png";
 import { Link } from "react-router-dom";
 import SectionEnter from "../components/SectionEnter";
 
-const ICONS = [
-  { icon: htmlIcon, title: "HTML" },
-  { icon: cssIcon, title: "CSS" },
-  { icon: jsIcon, title: "JavaScript" },
-  { icon: tsIcon, title: "TypeScript" },
-  { icon: gitIcon, title: "Git" },
-  { icon: tailwindcssIcon, title: "TailwindCSS" },
-  { icon: bootstrapIcon, title: "Bootstrap" },
-  { icon: reactIcon, title: "React" },
-  { icon: reduxIcon, title: "Redux" },
-  { icon: githubIcon, title: "Github" },
-];
+import { ICONS } from "../components/icons";
 
 export default function About() {
   const dispatch = useDispatch();
@@ -49,7 +29,7 @@ export default function About() {
 
       <Header title="About" />
 
-      <div className="relative mb-16 w-full bg-[#00000028] text-center text-white backdrop-blur">
+      <section className="relative mb-16 w-full bg-[#00000028] text-center text-white backdrop-blur">
         <p className="mx-auto w-full rounded-sm  px-1 py-2 tracking-wide md:w-1/2">
           Welcome to my corner of the digital world! I’m{" "}
           <span className="block bg-gradient-to-br from-white to-[#6cc7ff] bg-clip-text pr-0.5 text-lg font-bold italic text-transparent first-letter:text-3xl">
@@ -62,8 +42,8 @@ export default function About() {
           to contribute my unique perspective and skills to the ever-changing
           web development landscape.
         </p>
-      </div>
-      <div className="container relative mx-auto flex flex-col gap-9 text-center text-white">
+      </section>
+      <section className="container relative mx-auto flex flex-col gap-9 text-center text-white">
         <div className="flex flex-col gap-3">
           <h2 className="text-3xl">Skills</h2>
           <div className="grid grid-cols-3 grid-rows-1 place-items-center gap-2 sm:grid-cols-5 lg:px-40">
@@ -75,29 +55,17 @@ export default function About() {
               >
                 <img
                   src={icon.icon}
-                  className={`relative block w-[50px] md:w-[80px]
-                  ${
-                    icon.title == "Redux"
-                      ? "w-[40px] rounded-md bg-purple-600 p-2 md:w-[60px]"
-                      : ""
-                  }
-                  
-                  ${
-                    icon.title == "TailwindCSS"
-                      ? " rounded-md bg-cyan-950 p-1"
-                      : ""
-                  }
-
-                  ${icon.title == "React" ? " rounded-md bg-cyan-950 p-1" : ""}
-                  `}
+                  className={`relative block w-[50px] md:w-[80px] ${
+                    icon.styles && icon.styles
+                  }`}
                   alt={icon.title}
                 />
               </div>
             ))}
           </div>
         </div>
-      </div>
-      <div className="relative my-24 flex flex-col gap-3 bg-[#ffffff41] py-2 text-white backdrop-blur before:absolute before:right-3 before:top-1/2  before:hidden before:h-max before:-translate-y-1/2 before:text-center before:text-lg before:font-medium before:tracking-widest before:content-['Social_Media'] before:[writing-mode:vertical-rl] sm:before:block">
+      </section>
+      <section className="relative my-24 flex flex-col gap-3 bg-[#ffffff41] py-2 text-white backdrop-blur before:absolute before:right-3 before:top-1/2  before:hidden before:h-max before:-translate-y-1/2 before:text-center before:text-lg before:font-medium before:tracking-widest before:content-['Social_Media'] before:[writing-mode:vertical-rl] sm:before:block">
         <div className="flex h-full flex-wrap items-center justify-center gap-2 sm:gap-4">
           <a
             href="https://www.facebook.com/mazen.adelii"
@@ -138,8 +106,8 @@ export default function About() {
             </span>
           </a>
         </div>
-      </div>
-      <div className="relative mx-auto flex flex-col items-center justify-center gap-3 pb-4 text-center text-white">
+      </section>
+      <section className="relative mx-auto flex flex-col items-center justify-center gap-3 pb-4 text-center text-white">
         <div className="relative flex w-full flex-col gap-5">
           <a
             href="https://drive.google.com/file/d/1bNHmAKVCJGFnmWHdrM3m82vBwmAYNCIi/view?usp=sharing"
@@ -164,7 +132,7 @@ export default function About() {
         >
           Let’s build something amazing together!
         </Link>
-      </div>
+      </section>
     </>
   );
 }
